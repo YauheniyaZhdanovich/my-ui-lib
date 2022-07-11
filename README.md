@@ -1,27 +1,19 @@
 # MyUiLib
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
+npm i => npm run storybook
 
-## Development server
+the storybook service has started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+We can see all the component we created story for on the page
 
-## Code scaffolding
+With comments we can make generated documentation tab very imformative
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Take a good look for the top panel that has Canvas/Documentation tabs
 
-## Build
+We can speed up the development with tools like themeing(dark-light), set of sizes(also portrait-landscape options), sizing tool
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+https://github.com/storybookjs/storybook/blob/next/addons/interactions/README.md
 
-## Running unit tests
+nice tool for debagging - addon was not added in the example, but can be very useful
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+the storybook lots of configuration options that help to debug isolated components - I loved it🦄
