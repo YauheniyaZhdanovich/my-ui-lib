@@ -1,0 +1,21 @@
+<span
+  class="chr-input__main-container"
+  [class.error]="styledValidation && invalid"
+  [class.success]="styledValidation && showSuccessState && !invalid"
+  [class.disabled]="disabled"
+  [class.required]="required">
+  <ng-content select=".chr-input__title"></ng-content>
+  <span class="chr-input__input-container" [class.right]="right.children.length" [class.left]="left.children.length">
+    <input
+      type="text"
+      class="chr-input__input"
+      pInputText
+      [placeholder]="placeholder"
+      [(ngModel)]="value"
+      (ngModelChange)="fireOnChange()"
+      [disabled]="disabled" />
+    <span #left><ng-content select=".chr-input__icon--left"></ng-content></span>
+    <span #right><ng-content select=".chr-input__icon--right"></ng-content></span>
+  </span>
+  <ng-content select=".chr-input__hint"></ng-content>
+</span>
